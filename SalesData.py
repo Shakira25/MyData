@@ -1,3 +1,12 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+sales = pd.read_csv('sales.csv')
+
+
 def print_total_sales_in_dec():
     total_sales = sales['Amount'].sum()
     print("{:,}".format(round(total_sales)))
