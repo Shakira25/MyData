@@ -3,8 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sales = pd.read_csv(r'C:\Users\sbabirye\Downloads\sales.csv')
-
+import requests
+import io
+url = "https://raw.githubusercontent.com/Shakira25/MyData/main/sales.csv"
+download = requests.get(url).content
+df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 
 
 def print_total_sales_in_dec():
