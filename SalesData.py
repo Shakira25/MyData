@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-sales = pd.read_csv('./sales.csv')
+sales = pd.read_csv('sales.csv')
 
 
 def print_total_sales_in_dec():
