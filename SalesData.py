@@ -7,7 +7,7 @@ import requests
 import io
 url = "https://raw.githubusercontent.com/Shakira25/MyData/main/sales.csv"
 download = requests.get(url).content
-df = pd.read_csv(io.StringIO(download.decode('utf-8')))
+sales = pd.read_csv(io.StringIO(download.decode('utf-8')))
 
 
 def print_total_sales_in_dec():
