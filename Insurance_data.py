@@ -6,7 +6,7 @@ import seaborn as sns
 
 import requests
 import io
-url = "https://raw.githubusercontent.com/Shakira25/MyData/main/sales.csv"
+url = "https://raw.githubusercontent.com/Shakira25/MyData/main/insurance.csv"
 download = requests.get(url).content
 df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 
