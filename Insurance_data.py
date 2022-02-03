@@ -10,7 +10,6 @@ url = "https://raw.githubusercontent.com/Shakira25/MyData/main/insurance.csv"
 download = requests.get(url).content
 df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 
-df = pd.read_csv('insurance.csv')
 
 def print_the_first_five_rows():
     df.head()
